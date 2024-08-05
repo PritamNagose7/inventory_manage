@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inventory Details</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<header>
+		<h2><nav>
+			<a href="addSupplier.html" class="add Supplier">Add Supplier</a>
+			<a href="addProduct.html" class="add Product">Add Product</a>
+		</nav></h2>
+	</header>
+
+	<main>
+		 <!--product list section-->
+		<section id="product-list">
+			<h1>Product Details</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Description</th>
+						<th>Name</th>
+						<th>Price</th>
+						<th>Shift Manager ID</th>
+						<th>Shift Manager Name</th>
+						<th>Stock</th>
+						<th>Stock Export Date</th>
+						<th>Stock Import Date</th>
+						<th>Supplier ID</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody id="product-data">
+				</tbody>
+			</table>
+			<button onclick="location.href='addProduct.html'">Add Product</button>
+		</section>
+
+	<!--supplier list section-->
+	<section id="supplier-list">
+			<h1>Supplier Details</h1>
+			<table>
+				<table id="supplierTable">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Contact Info</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					</tbody>
+			</table>
+			<button onclick="location.href='addSupplier.html'">Add supplier</button>
+		</section>
+	</main>
+ <footer>
+    </footer>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>

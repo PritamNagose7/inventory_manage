@@ -1,0 +1,27 @@
+create database inventorydb;
+
+tables are created automatically then program is run.
+
+mysql> INSERT INTO supplier (contact_info, name) VALUES
+    -> ('123 Main St, Anytown, USA', 'Supplier A'),
+    -> ('456 Elm St, Anytown, USA', 'Supplier B'),
+    -> ('789 Oak St, Anytown, USA', 'Supplier C'),
+    -> ('101 Pine St, Anytown, USA', 'Supplier D'),
+    -> ('202 Maple St, Anytown, USA', 'Supplier E'),
+    -> ('303 Birch St, Anytown, USA', 'Supplier F'),
+    -> ('404 Cedar St, Anytown, USA', 'Supplier G'),
+    -> ('505 Walnut St, Anytown, USA', 'Supplier H'),
+    -> ('606 Cherry St, Anytown, USA', 'Supplier I'),
+    -> ('707 Ash St, Anytown, USA', 'Supplier J');
+
+mysql> INSERT INTO product (description, name, price, shift_manager_id, shift_manager_name, stock, stock_export_date, stock_import_date, supplier_id) VALUES
+    -> ('High-quality widget', 'Widget A', 19.99, 1001, 'John Doe', 50, '2024-07-01', '2024-07-10', 1),
+    -> ('Durable tool', 'Tool B', 29.99, 1002, 'Jane Smith', 75, '2024-07-05', '2024-07-12', 2),
+    -> ('Reliable gadget', 'Gadget C', 15.49, 1003, 'Alice Johnson', 30, '2024-07-08', '2024-07-14', 3),
+    -> ('Versatile accessory', 'Accessory D', 9.99, 1004, 'Bob Brown', 100, '2024-07-10', '2024-07-15', 4),
+    -> ('Advanced equipment', 'Equipment E', 49.99, 1005, 'Carol White', 20, '2024-07-12', '2024-07-20', 5),
+    -> ('Heavy-duty machine', 'Machine F', 99.99, 1006, 'David Green', 10, '2024-07-15', '2024-07-25', 6),
+    -> ('Compact device', 'Device G', 25.50, 1007, 'Eva Black', 60, '2024-07-18', '2024-07-28', 7),
+    -> ('Ergonomic chair', 'Chair H', 89.99, 1008, 'Frank Blue', 40, '2024-07-20', '2024-07-30', 8),
+    -> ('Innovative tool', 'Tool I', 35.75, 1009, 'Grace Gold', 25, '2024-07-22', '2024-08-01', 9),
+    -> ('High-performance gear', 'Gear J', 75.00, 1010, 'Hank Silver', 15, '2024-07-25', '2024-08-05', 10);
